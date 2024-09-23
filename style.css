@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 200px auto;
+  padding: 10px;
+  width: 700px;
+  height: 500px;
+  background-color: #f7f9f9;
+  border-radius: 12px;
+}
+
+.head h1 {
+  text-align: center;
+  padding: 24px;
+}
+
+.head p {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.campo-adivinhacao {
+  width: 72px;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.campo-adivinhacao:disabled {
+  background-color: #d4e6f1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.enviar-palpite {
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1abc9c;
+  color: #eafaf1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.enviar-palpite:disabled {
+  background-color: #d4e6f1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.novo-jogo {
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1abc9c;
+  color: #eafaf1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.resultados {
+  margin-top: 32px;
+  padding: 20px;
+}
+
+.resultados p {
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 200px auto;
+    padding: 10px;
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 200px auto;
+    padding: 10px;
+    width: 380px;
+    height: 500px;
+  }
+}

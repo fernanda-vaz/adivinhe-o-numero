@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Adivinhe o número</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/?size=18&id=p3g2Jqc06dwe&format=png&color=000000"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>Adivinhe o número!</h1>
+        <p>
+          Foi selecionado um número aleatório de 1 a 100. Tente acertar em 10
+          tentativas ou menos!
+        </p>
+      </div>
+
+      <div class="formulario">
+        <label for="campo-adivinhacao">Seu palpite:</label>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          required
+          id="campo-adivinhacao"
+          class="campo-adivinhacao"
+        />
+        <input type="submit" value="Envie seu palpite" class="enviar-palpite" />
+      </div>
+
+      <div class="resultados">
+        <p class="palpites"></p>
+        <p class="ultimo-palpite"></p>
+        <p class="alto-baixo"></p>
+      </div>
+    </div>
+  </body>
+</html>
